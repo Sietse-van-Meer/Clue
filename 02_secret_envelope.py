@@ -1,4 +1,4 @@
-#Objective 2: Creating the secret envelope.
+#Exercise 2: Creating the secret envelope.
 #This envelope consists the answer of the game, who did the murder, with what weapon, and at what place?
 #The secret envelope consists of randomly 1 suspect, 1 weapon, and 1 room.
 
@@ -59,4 +59,4 @@ print(f"Secret envelope: {envelope}")
 
 #Covered in this piece of code: lists, tuples, dictionaries, f strings, random.choice(), random.shuffle().
 
-#AI review: 
+#AI review: It is good. Dictionary does not really 'force' one item of each category. I just ensured one item for each category by choosing randomly once from each list.

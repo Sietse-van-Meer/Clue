@@ -1,7 +1,7 @@
 #We start making Clue from zero.
 #We code without AI, to learn python. AI is used to judge my code in the end. 
 
-#Objective 1: make the representitive cards in Clue
+#Exercise 1: make the representitive cards in Clue
 #1.1 Make each category a python list
 #1.2 Make one big card list
 #Print the amount of suspects, weapons, rooms, and total number of cards
