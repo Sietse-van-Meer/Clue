@@ -34,20 +34,20 @@ in_envelope_cards = list(envelope.values())
 
 #Then now, how to go over each card in total_cards, and remove the cards that match the envelope.
 
-#This way, we make the cards_for_dealing. I found on stackoverflow one way using sets.
+#This way, we make the deck. I found on stackoverflow one way using sets.
 #The downside is that using sets, the order of elements are not preserved, and duplicates within lists are deleted. 
 #Since the side effects seem not to affect our case, I gave it a try. It works.
 
 #However, translating to sets kind of increases data types. Possibly, there is a way using just lists and dictionaries.
 #I found here: https://www.geeksforgeeks.org/python/python-remove-all-values-from-a-list-present-in-other-list/ another way.
 #This seems to be list comprehension: a shorter syntax when you want to create a new list based on the values of an existing list.
-cards_for_dealing = [x for x in total_cards if x not in in_envelope_cards]
-#print(cards_for_dealing)
+deck = [x for x in total_cards if x not in in_envelope_cards]
+#print(deck)
 
 #Check if the envelope cards are no longer present in deck. 
-# So check for duplicates between cards_for_dealing and in_envelope_cards.
+# So check for duplicates between deck and in_envelope_cards.
 
-matches = [x for x in cards_for_dealing if x in in_envelope_cards]
+matches = [x for x in deck if x in in_envelope_cards]
 #print(matches)
 
 
@@ -57,7 +57,7 @@ matches = [x for x in cards_for_dealing if x in in_envelope_cards]
 
 print(f'total cards: {len(total_cards)}')
 print(f'Envelope cards: {len(in_envelope_cards)}')
-print(f'Cards available for dealing: {len(cards_for_dealing)}')
+print(f'Cards available for dealing: {len(deck)}')
 print(f'Matches between cards available for dealing and envelope cards: {len(matches)}')
 
 
