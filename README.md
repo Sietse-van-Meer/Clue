@@ -1,74 +1,87 @@
-# Clue From Scratch 🕵️
+Clue From Scratch 🕵️
 
-A Python learning project in which I build **Clue (Cluedo) from scratch**, one exercise at a time.
+A Python learning project in which I build Clue (Cluedo) from scratch, one exercise at a time.
 
 The goal is to understand the code well enough to explain and modify it myself.
 
-## Approach
+Approach
 
 For each exercise:
 
-1. I solve the problem myself.
-2. I document my reasoning and attempts.
-3. AI reviews the finished code afterwards.
-4. Each exercise is saved separately to show the progression of the project.
+I solve the problem myself.
 
-## Progress
+I document my reasoning and attempts.
 
-### Exercise 01 — Card system ✅
+AI reviews the finished code afterwards.
+
+Each exercise is saved separately to show the progression of the project.
+
+Progress
+
+Exercise 01 — Card system ✅
 
 Created the three Clue card categories and combined them into one list.
 
-Practiced:
+Practiced: lists, variables, combining lists, len(), f-strings.
 
-- Lists
-- Variables
-- Combining lists
-- `len()`
-- f-strings
-
-File: `01_card_system.py`
-
-### Exercise 02 — Secret envelope ✅
+Exercise 02 — Secret envelope ✅
 
 Randomly selected one suspect, one weapon, and one room and stored them in a dictionary.
 
-Practiced:
+Practiced: random.choice(), lists, tuples, dictionaries, dictionary keys and values.
 
-- `random.choice()`
-- Lists, tuples, and dictionaries
-- Dictionary keys and values
-- Choosing a suitable data structure
+Exercise 03 — Remove envelope cards ✅
 
-File: `02_secret_envelope.py`
+Created the playable deck by excluding the three cards in the secret envelope.
 
-## Next
+Practiced: list comprehensions, membership checks, dictionary .values().
 
-### Exercise 03 — Remove envelope cards from the deck
+Exercise 04 — Shuffle the deck ✅
 
-Create the deck that remains after the three secret envelope cards are excluded.
+Randomized the order of the remaining cards while preserving the deck contents.
 
-Starting point:
+Practiced: random.shuffle(), random.sample(), list validation.
 
-- 21 total cards
-- 3 envelope cards
-- 18 cards available for dealing
+Exercise 05 — Deal cards ✅
 
-Next topics:
+Dealt cards to three players in turn and explored both modulo-based and nested-loop solutions.
 
-- Copying lists
-- Removing or excluding items
-- `in` / `not in`
-- Loops
+Practiced: enumerate(), modulo %, if/elif/else, while loops, nested loops, .append().
 
-## Long-term goal
+Exercise 06 — Generalize players and hands ✅
+
+Replaced hardcoded player hands with a dictionary and made the dealing logic work for 3–6 players.
+
+Practiced: dictionaries, dynamic data structures, nested loops, random.randint(), reducing hardcoding, validation checks.
+
+Next
+
+Exercise 07 — Suggestions
+
+Build the first Clue suggestion mechanic using:
+
+one suspect
+
+one weapon
+
+one room
+
+a player making the suggestion
+
+This will be the first step toward checking whether another player can disprove a suggestion.
+
+Long-term goal
 
 Gradually build toward:
 
-- Dealing cards
-- Suggestions and disproving
-- Knowledge tracking
-- Deduction rules
-- CPU strategies
-- Simulations
-- Testing and refactoring
+Suggestions and disproving
+
+Knowledge tracking
+
+Deduction rules
+
+CPU strategies
+
+Simulations
+
+Testing and refactoring
