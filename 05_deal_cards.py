@@ -99,7 +99,7 @@ order_list = [player_1_hand, player_2_hand, player_3_hand]
 #It said I could look at while loops, and that logic fits I think.
 
 i = 0
-while i < len(deck): #Not <=, else you will go out of bounds
+while i < len(shuffled_deck): #Not <=, else you will go out of bounds
      for index, item in enumerate(order_list): 
           item.append(shuffled_deck[i])  #You can use append to specifically add the item from deck. 
           i += 1
