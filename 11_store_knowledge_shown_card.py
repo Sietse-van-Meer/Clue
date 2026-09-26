@@ -226,4 +226,4 @@ game_simulation(10)
 
 #Using sets is more future proof (Already changed this in the code, as we will need this in the next exercise.)
 
-#i += 1 is unnuecessary
+#i += 1 is unnecessary
