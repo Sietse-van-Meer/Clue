@@ -69,30 +69,6 @@ while i < len(shuffled_deck):
 
 
 
-#Exercise 13:
-#We now want three different kinds of knowledge.
-
-#13.1 Create an UNCERTAIN knowledge structure
-#1. HAVE knowledge:
-#Cards we know a player definitely owns.
-
-#2. NOT HAVE knowledge:
-#Cards we know a player definitely does not own.
-
-#3. UNCERTAIN / ONE-OF
-#Player owns at least one card from a group,
-#but we do not yet know which one.
-
-#Maybe a list with multiple sets (multiple one of constraints)
-#Player 1": {"Player 1": NOT RELEVANT,
-#            "Player 2": [(SET 1), (SET 2)],
-#            "Player 3": [(SET 1), (SET 2)],
-#            "Player 4": [(SET 1), (SET 2)]}
-
-
-#13.2 Store uncertain knowledge when someone disproves
-#13.3 Avoid storing the same uncertain group twice
-
 #In this exercise, the complexity went further up. It was though as the loops become increasingly nested and more difficult to read.
 #I may introduce a function in exercise 15.
 #Also, I observe that further deductions are possible via:
